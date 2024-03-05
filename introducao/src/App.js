@@ -1,10 +1,12 @@
-
+import MeusDados01 from "./components/atividade00/MeusDados01";
 
 function App() {
   return (
+
     <div>
-      <h1>Olllaaaa</h1>
+      <MeusDados01></MeusDados01>
     </div>
+
   );
 }
 

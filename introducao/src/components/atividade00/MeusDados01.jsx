@@ -1,6 +1,6 @@
 import React , {Component}from "react";
 
-const MeusDados01 = () => {
+const MeusDadosV1 = () => {
     return (
         <div>
         <h1>Nomes: Robson e Bruno</h1>
@@ -40,4 +40,4 @@ class MeusDadosV4 extends Component {
     }
   }
   
- export default MeusDados01
+ export default MeusDadosV2

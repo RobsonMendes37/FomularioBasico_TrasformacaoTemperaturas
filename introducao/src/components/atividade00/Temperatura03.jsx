@@ -2,36 +2,23 @@ import React from 'react';
 
 const CelsiusParaFahrenheit = (c) => {
     const Cel = c;
-    const Fahr = Cel * 9 / 5 + 32;
+    const Fahr = (Cel * 9 / 5 + 32).toFixed(2);
 
-    return (
-        <div>
-            <h3>Temperatura em Celsius: {Cel} ... Temperatura em Fahrenheit: {Fahr}</h3>
-        </div>
-    );
+    return Fahr;
 }
 
 const FahrenheitParaCelsius = (f) => {
     const Fahr = f;
-    const Cel = (Fahr - 32) * 5 / 9;
+    const Cel = ((Fahr - 32) * 5 / 9).toFixed(2);
 
-    return (
-        <div>
-            <h3>Temperatura em Fahrenheit: {Fahr} ... Temperatura em Celsius: {Cel}</h3>
-        </div>
-    );
+    return Cel;
 }
 
 const Kelvin = (k) => {
-    const Kev = k;
-    const Cel = (Kev - 273);
-    const Fahr = ((k-273.15)*1.8)+32;
+    const Cel = (k - 273).toFixed(2);
+    const Fahr = ((k - 273.15) * 1.8 + 32).toFixed(2);
 
-    return (
-        <div>
-            <h3>Temperatura em Kelvin: {Kev} ... Temperatura em Celsius: {Cel} ... Temperatura: {Fahr}</h3>
-        </div>
-    );
+    return [Cel, Fahr];
 }
 
 export { CelsiusParaFahrenheit, FahrenheitParaCelsius, Kelvin };
